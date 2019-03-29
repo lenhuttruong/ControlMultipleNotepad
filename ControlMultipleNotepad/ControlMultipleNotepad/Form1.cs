@@ -18,6 +18,8 @@ namespace ControlMultipleNotepad
             InitializeComponent();
         }
 
+        Process[] processes;
+
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -30,7 +32,12 @@ namespace ControlMultipleNotepad
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Process[] processes = Process.GetProcessesByName("Notepad");
+            processes = Process.GetProcessesByName("Notepad");
+        }
+
+        private void txtInput_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

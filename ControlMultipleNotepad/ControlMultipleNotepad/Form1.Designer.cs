@@ -35,6 +35,7 @@
             this.btnStop = new System.Windows.Forms.Button();
             this.chBoxSieuDo = new System.Windows.Forms.CheckBox();
             this.btnRefreshAccount = new System.Windows.Forms.Button();
+            this.txtInput = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtAccount
@@ -101,12 +102,21 @@
             this.btnRefreshAccount.UseVisualStyleBackColor = false;
             this.btnRefreshAccount.Click += new System.EventHandler(this.btnRefreshAccount_Click);
             // 
+            // txtInput
+            // 
+            this.txtInput.Location = new System.Drawing.Point(28, 93);
+            this.txtInput.Name = "txtInput";
+            this.txtInput.Size = new System.Drawing.Size(100, 20);
+            this.txtInput.TabIndex = 5;
+            this.txtInput.TextChanged += new System.EventHandler(this.txtInput_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(255, 271);
+            this.Controls.Add(this.txtInput);
             this.Controls.Add(this.btnRefreshAccount);
             this.Controls.Add(this.chBoxSieuDo);
             this.Controls.Add(this.btnStop);
@@ -129,6 +139,7 @@
         private System.Windows.Forms.Button btnStop;
         private System.Windows.Forms.CheckBox chBoxSieuDo;
         private System.Windows.Forms.Button btnRefreshAccount;
+        private System.Windows.Forms.TextBox txtInput;
     }
 }
 
